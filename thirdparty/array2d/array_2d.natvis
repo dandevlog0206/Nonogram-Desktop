@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+	<Type Name="std::array_2d&lt;*&gt;">
+		<DisplayString>{{ shape=({_Mypair._Myval2._Row}×{_Mypair._Myval2._Col})}}</DisplayString>
+		<Expand>
+			<Item Name="[size]" ExcludeView="simple">_Mypair._Myval2._Mylast - _Mypair._Myval2._Myfirst</Item>
+			<Item Name="[capacity]" ExcludeView="simple">_Mypair._Myval2._Mylast - _Mypair._Myval2._Myfirst</Item>
+			<ArrayItems Condition="_Mypair._Myval2._Myfirst != 0">
+				<Direction>Forward</Direction>
+				<Rank>2</Rank>
+				<Size>_Mypair._Myval2._Row, _Mypair._Myval2._Col</Size>
+				<ValuePointer>_Mypair._Myval2._Myfirst</ValuePointer>
+			</ArrayItems>
+		</Expand>
+	</Type>
+</AutoVisualizer>
