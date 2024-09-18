@@ -1,0 +1,3 @@
+[submodule "thirdparty/VKDL"]
+	path = thirdparty/VKDL
+	url = https://github.com/dandevlog0206/VKDL
